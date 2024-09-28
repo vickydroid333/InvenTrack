@@ -60,6 +60,9 @@ class AddEditCategoryFragment : Fragment() {
                     Toast.makeText(context, "Category updated!", Toast.LENGTH_SHORT).show()
                 }
 
+                // Clear the EditText field after saving/updating
+                categoryNameEditText.text.clear()
+
                 // Navigate back to DeleteCategoryFragment
                 parentFragmentManager.beginTransaction()
                     .replace(R.id.fragment_container, DeleteCategoryFragment())
