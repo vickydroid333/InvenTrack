@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp">  <!-- Increased padding for tablets -->
+
+    <!-- EditText with larger text size and margin -->
+    <EditText
+        android:id="@+id/category_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Category Name"
+        android:textSize="20sp"
+    android:layout_marginBottom="24dp" />
+
+    <!-- Button with increased width and padding -->
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Category"
+        android:padding="12dp" />
+</LinearLayout>
